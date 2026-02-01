@@ -6,24 +6,25 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "add",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
+				"stateMutability": "payable",
+				"type": "fallback"
 			},
 			{
 				"inputs": [],
-				"name": "bigNumb",
+				"name": "result",
 				"outputs": [
 					{
-						"internalType": "uint8",
+						"internalType": "uint256",
 						"name": "",
-						"type": "uint8"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -39,7 +40,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SafeMathTester.sol": "SafeMathTester"
+			"contracts/FallbackExample.sol": "FallbackExample"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -53,12 +54,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/SafeMathTester.sol": {
-			"keccak256": "0xc847b67f2175fc15f140e9d003de0f15a22d00fbadf708f6cbcd3d24c41d061d",
+		"contracts/FallbackExample.sol": {
+			"keccak256": "0xccd9baba6fedd369a32c9785aa4f38bffdee567f22fe1cfd797f688e32bbd0cc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://774fca6bcecdd0704460df0fce35875031a633c213db8111706abb1c29ecfbc7",
-				"dweb:/ipfs/QmSYWB3EyMTr9rBAfFGWGiMaSiaCxvsdUzVMkWrq3Vpzdk"
+				"bzz-raw://a1f8b9364c3909f8f20f52ed395e3bea38e788cc196cd9ed6574b0b552f08bc1",
+				"dweb:/ipfs/QmWRvWheFZQqvJrwCJsRDBcHJc1yXANCat2sJ6KBr6oR5X"
 			]
 		}
 	},

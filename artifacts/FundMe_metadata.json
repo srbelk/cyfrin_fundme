@@ -6,6 +6,33 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "NotOwner",
+				"type": "error"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "MINIMUM_USD",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -52,12 +79,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "minimunUsd",
+				"name": "i_owner",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -69,6 +96,10 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -84,7 +115,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"FundMe.sol": "FundMe"
+			"contracts/FundMe.sol": "FundMe"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -106,15 +137,15 @@
 				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
 			]
 		},
-		"FundMe.sol": {
-			"keccak256": "0x2e2f89b259463cda61076725a26367d3ce1e917344af4dabc548d2eb238b92a0",
+		"contracts/FundMe.sol": {
+			"keccak256": "0xd3b58a7b092013043e67846a06e6e30a274ecf85f3164dfa5f0391f1cd730514",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://26806836c58194bfe2728453b492a1ccb49f998502540ee6918c663b49c8da0f",
-				"dweb:/ipfs/QmbmA4BFLfmZYcFeCXp2YHoX65bexeWonxHx96etmzieZH"
+				"bzz-raw://c7c58816b7406d5c41852006141623192dc59db2fce5d3546318b9ea5b23b464",
+				"dweb:/ipfs/QmSL6t1WpJebFfDKCBWX6Ag87eKc9GsESJv33h5Ge6x3TG"
 			]
 		},
-		"PriceConverter.sol": {
+		"contracts/PriceConverter.sol": {
 			"keccak256": "0xd77a1c5ef2512e59194cdc755693d76702a7f02bd4d8cfcfb66ac912af26fd94",
 			"license": "MIT",
 			"urls": [
